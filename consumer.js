@@ -3,7 +3,6 @@ const amqpUrl = process.env.AMQP_URL || "amqp://localhost:5673";
 
 async function processMessage(msg) {
   console.log(msg.content.toString(), "Call email API here");
-  //call your email service here to send the email
   console.log("sent successfully");
 }
 
